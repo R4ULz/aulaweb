@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <Form>
+        <p>Nome:</p>
+        <input type="text" name="teste" id="nome">
+        <p>Idade:</p>
+        <input type="text" name="ida" id="idade">
+        <p>Nome do pai:</p>
+        <input type="text" name="nomep" id="nomePai">
+        <p>Nome da mãe:</p>
+        <input type="text" name="nomem" id="nomeMae">
+        <button onclick="testeBotao()">surapi</button>
+    </Form>
+
+
+    <script>
+    function testeBotao(){
+    let name = document.getElementById('nome').value
+    let idad = document.getElementById('idade').value
+    let pai = document.getElementById('nomePai').value
+    let mãe = document.getElementById('nomeMae').value
+
+    alert(`Seu nome é ${name}, sua idade é ${idad}, o nome do seu pai é ${pai}, o nome da sua mãe é${mae}`)
+    }
+    </script>
+</body>
+</html>
